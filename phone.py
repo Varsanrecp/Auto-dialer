@@ -21,9 +21,7 @@ if not all([ACCOUNT_SID, AUTH_TOKEN, TWILIO_NUMBER, RECIPIENT_NUMBER]):
 
 
 def create_twiml_message():
-    """
-    Creates the TwiML (Twilio Markup Language) that dictates what the voice agent says.
-    """
+
     response = VoiceResponse()
 
     response.say(
